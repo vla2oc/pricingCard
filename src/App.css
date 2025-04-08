@@ -1,0 +1,30 @@
+.app-layout{
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: 2fr 10fr;
+  grid-gap: 10px;
+  height: 100vh;
+
+}
+.header{
+  grid-area: header;
+  background-color: #f5f5f5;
+  padding: 10px;
+  background-color: #09102D;
+}
+.sider{
+  grid-area: sidebar;
+  background-color: #09102D;
+  padding: 10px;
+}
+
+
+.content{
+  grid-area: main;
+  padding: 20px;
+  background-color:  #09102D;
+
+}

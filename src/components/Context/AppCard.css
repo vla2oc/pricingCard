@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Roboto:ital,wght@1,300&family=Syne:wght@400..800&family=Teko&display=swap');
+.card-container{
+display: block;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+text-align: center;
+width: 350px;
+display: flex;
+flex-direction: column;
+position: relative;
+align-items: center;
+padding-top:25px;
+padding-left: 25px;
+padding-right: 25px;
+padding-bottom: 25px;
+min-height: 500px;
+border-radius: 50px;
+background-color: rgb(10, 14, 41);
+font-family:'Monomaniac One', sans-serif;
+border: 1px solid rgba(176, 92, 255, 0.239)
+}
+
+.card-container .subtitle{
+  margin-bottom: 5px;
+}
+
+.card-container .subtitle .subtitle-name{
+  border: 1px solid rgba(255, 144, 237, 0.709);
+  border-radius: 15px;
+  letter-spacing: 3px;
+  padding: 5px;
+  color: white;
+  display: block;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.card-container .subtitle .title-price{
+  color: rgb(208, 255, 151);
+  font-size: 46px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  letter-spacing: 4px;
+}
+
+.card-container .subtitle .decription{
+  color: white;
+
+}
+.card-container .card-content{
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.815);
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  line-height: 40px;
+  text-align: left;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+}
+.line-horizont{
+  width: 80%;
+  margin-top: 10px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.546);
+  z-index: 0;
+}
+button {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  margin-top: 20px;
+  border: 2px solid var(--glow-color);
+  padding: 10px 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+ }
+ 
+ button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }

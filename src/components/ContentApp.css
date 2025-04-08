@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Roboto:ital,wght@1,300&family=Syne:wght@400..800&family=Teko&display=swap');
+.card-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+    position: relative;
+  }
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom:50px ;
+    font-family:'Monomaniac One', sans-serif;
+    color: white;
+
+  }
+  
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 0.1em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #5099ff;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(2.8em) rotate(360deg);
+  }
+  .content .main-text{
+    color: rgb(222, 253, 255);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-20px);
+    font-family:'Monomaniac One', sans-serif; 
+    letter-spacing: 5px;
+    font-size: 46px;
+
+  }
